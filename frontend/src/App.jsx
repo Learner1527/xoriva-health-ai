@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import logo from "./assets/logo.png";
 import { Activity, AlertTriangle, Bot, Boxes, DollarSign, Plus, Trash2 } from "lucide-react";
 
 const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
@@ -92,7 +93,10 @@ function App() {
   return (
     <main>
       <nav className="navbar">
-        <div className="brand">Xoriva</div>
+        <div className="brand">
+           <img src={logo} alt="Xoriva AI" className="logo" />
+           <span>Xoriva AI</span>
+        </div>
         <a href="#inventory">Inventory</a>
         <a href="#alerts">Alerts</a>
         <a href="#agent">Ask XORA</a>
@@ -101,7 +105,7 @@ function App() {
       <section className="hero">
         <div>
           <p className="eyebrow">Xoriva HealthOps AI</p>
-          <h1>AI-Powered Health Operations Platform</h1>
+          <h1>AI-Powered Healthcare Operations Intelligence</h1>
           <p className="subtitle">Manage healthcare inventory, low-stock alerts, analytics, and AI workflow assistance for clinics, hospitals, and pharmacies.</p>
           <div className="actions">
             <button onClick={seedData}>Load demo data</button>
