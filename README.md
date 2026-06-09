@@ -1,4 +1,4 @@
-# Xoriva OptiPulse HealthOps
+# Xoriva HealthOps AI
 
 Full-stack healthcare operations demo app.
 
@@ -81,7 +81,7 @@ http://localhost:5173
 
 Click **Load demo data** on the homepage.
 
-## 4. Useful agent chat prompts
+## 4. Useful Ask XORA prompts
 
 ```text
 show low stock

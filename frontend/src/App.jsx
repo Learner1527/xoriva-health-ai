@@ -95,7 +95,7 @@ function App() {
         <div className="brand">Xoriva</div>
         <a href="#inventory">Inventory</a>
         <a href="#alerts">Alerts</a>
-        <a href="#agent">Agent Chat</a>
+        <a href="#agent">Ask XORA</a>
       </nav>
 
       <section className="hero">
@@ -137,7 +137,7 @@ function App() {
         </div>
 
         <div className="panel" id="agent">
-          <h2><Bot size={22} /> Agent chat</h2>
+          <h2><Bot size={22} /> Ask XORA</h2>
           <div className="chat-row">
             <input value={chatMessage} onChange={e => setChatMessage(e.target.value)} placeholder="Ask: low stock, inventory value, reorder recommendation" />
             <button onClick={askAgent}>Ask</button>

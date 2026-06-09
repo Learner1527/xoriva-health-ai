@@ -17,7 +17,7 @@ else:
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
-app = FastAPI(title="Xoriva OptiPulse HealthOps", version="1.0.0")
+app = FastAPI(title="Xoriva HealthOps AI", version="1.0.0")
 
 allowed_origins = os.getenv("ALLOWED_ORIGINS", "*").split(",")
 app.add_middleware(
@@ -78,7 +78,7 @@ def get_db():
 
 @app.get("/")
 def root():
-    return {"status": "running", "app": "Xoriva OptiPulse HealthOps"}
+    return {"status": "running", "app": "Xoriva HealthOps AI"}
 
 
 @app.post("/seed")
