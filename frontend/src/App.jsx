@@ -100,8 +100,8 @@ function App() {
 
       <section className="hero">
         <div>
-          <p className="eyebrow">OptiPulse HealthOps</p>
-          <h1>AI-powered health operations platform.</h1>
+          <p className="eyebrow">Xoriva HealthOps AI</p>
+          <h1>AI-Powered Health Operations Platform</h1>
           <p className="subtitle">Manage healthcare inventory, low-stock alerts, analytics, and AI workflow assistance for clinics, hospitals, and pharmacies.</p>
           <div className="actions">
             <button onClick={seedData}>Load demo data</button>
